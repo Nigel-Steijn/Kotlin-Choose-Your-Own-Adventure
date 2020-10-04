@@ -1,6 +1,7 @@
-package states
+package com.steijn.adventure.states.examples
 
-import Option
+import com.steijn.adventure.Option
+import com.steijn.adventure.states.State
 
 object State01 : State {
     override fun getText(): String =

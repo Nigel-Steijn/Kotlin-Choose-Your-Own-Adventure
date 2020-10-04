@@ -1,6 +1,6 @@
-package states
+package com.steijn.adventure.states
 
-import Option
+import com.steijn.adventure.Option
 
 interface State {
     fun getText(): String
