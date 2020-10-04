@@ -27,16 +27,16 @@ object GameStateManager {
 
             try {
                 print("\nGo with option: ")
-                val option = inputReader.nextInt()
+                val option = Integer.parseInt(inputReader.next())
 
                 changeState(
                         options[option - 1].state
                 )
+
+                for (i in 0..5)
+                    print("\n")
             } catch (e: Exception) {
                 println("Incorrect input value!")
-            } finally {
-                for (i in 0..10)
-                    print("\n")
             }
         }
     }
